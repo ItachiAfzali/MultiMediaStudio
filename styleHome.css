@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'SG Kara';
+  src: url('path-to-font/SGKara.woff2') format('woff2');
+}
+
+.header {
+  width: 100%;
+  background-color: #1E1E1E;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+}
+
+.navigation ul li {
+  margin: 0;
+}
+
+.navigation ul li a {
+  font-family: 'SG Kara', sans-serif;
+  font-size: 5;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  color: #800080;
+}
+@font-face {
+  font-family: 'SG Kara';
+  src: url('path-to-sg-kara-font.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Yekan Bakh FaNum';
+  src: url('path-to-yekan-font.woff2') format('woff2');
+}
+
+.hero-section {
+  background-color: #1E1E1E;
+  color: #fff;
+  padding: 0% 0;
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1287px;
+  margin: 0 auto;
+}
+
+.studio-title {
+  font-family: 'SG Kara', sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #800080;
+}
+
+.hero-subtitle {
+  font-family: 'Yekan Bakh FaNum', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.divider {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  opacity: 0.5;
+}
+
+.hero-description-wrapper {
+  gap: 156px;
+}
+
+.hero-description {
+  font-family: 'Yekan Bakh FaNum', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: right;
+  max-width: 831px;
+  margin: 50;
+}
+
+.cta-button {
+  font-family: 'SG Kara', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background: url('https://dashboard.codeparrot.ai/api/assets/Z4DiZwIBBLnlud12') no-repeat center center;
+  background-size: cover;
+  border: none;
+  width: 400px;
+  height: 50px;
+  border-radius: 69px;
+  cursor: pointer;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.cta-button:hover {
+  background: #fff ;
+  color: #800080;
+
+}
+.services-section {
+  padding: 80px 0;
+  background-color: #1E1E1E;
+  color: #ffffff;
+}
+
+.section-title {
+  font-family: 'Yekan Bakh FaNum', sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  position: relative;
+  height: 435px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.service-image {
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.service-icon {
+  width: auto;
+  height: 160px;
+  object-fit: contain;
+}
+
+.service-content {
+  padding: 20px;
+  text-align: right;
+  z-index: 2;
+  position: relative;
+}
+
+.service-content h3 {
+  font-family: 'SG Kara', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.service-content p {
+  font-family: 'SG Kara', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
