@@ -1,0 +1,173 @@
+/* Header Styles */
+.main-header {
+    font-family:  'SG Kara', sans-serif;
+    background: #1E1E1E;
+    padding: 5px 10px;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    height: 6rem;
+    width: auto;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #e0b0ff !important;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background: rgba(43, 5, 55, 0.95);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Animation for nav links */
+  .nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #e0b0ff;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  @font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('path-to-yekan-font.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SG Kara';
+    src: url('path-to-sg-kara-font.woff2') format('woff2');
+  }
+
+  
+  body {
+    background-color: #1E1E1E;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    min-height: 100vh;   
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+
+h1 {
+    font-family: 'SG Kara', sans-serif;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px #6f42c1;
+}
+
+.service-card {
+    background-color: #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.icon-wrapper {
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.service-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.service-title {
+    font-family: 'SG Kara', sans-serif;
+    font-size: 1.5rem;
+    color: #F65C20;
+}
+
+.service-description {
+    font-family: 'Yekan Bakh FaNum' , sans-serif;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-right {
+    font-family: 'Yekan Bakh FaNum', sans-serif;
+    font-weight: 300;
+    text-align: right;
+  }
+  
+  .mt-5 {
+    margin-top: 3rem;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(90deg, #6f42c1, #a4508b);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #a4508b, #6f42c1);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: white;
+    color: #1a1a1a;
+  }
+
+
