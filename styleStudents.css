@@ -1,7 +1,17 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #1E1E1E;
+    --secondary-color: #e0b0ff;
+    --gradient-start: #8A2BE2;
+    --gradient-end: #9400D3;
+    --font-family-primary: 'SG Kara', sans-serif;
+    --font-family-secondary: 'Yekan Bakh FaNum', sans-serif;
+}
+
 /* Header Styles */
 .main-header {
-    font-family: 'SG Kara', sans-serif;
-    background: #1E1E1E;
+    font-family: var(--font-family-primary);
+    background: var(--primary-color);
     padding: 5px 10px;
     animation: gradientAnimation 10s ease infinite;
 }
@@ -26,7 +36,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: #e0b0ff !important;
+    color: var(--secondary-color) !important;
 }
 
 /* Responsive Styles */
@@ -51,7 +61,7 @@
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: #e0b0ff;
+    background-color: var(--secondary-color);
     transition: all 0.3s ease;
 }
 
@@ -61,17 +71,17 @@
 }
 
 @font-face {
-    font-family: 'Yekan Bakh FaNum';
+    font-family: var(--font-family-secondary);
     src: url('path-to-yekan-font.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'SG Kara';
+    font-family: var(--font-family-primary);
     src: url('path-to-sg-kara-font.woff2') format('woff2');
 }
 
 body {
-    background-color: #1E1E1E;
+    background-color: var(--primary-color);
     color: #fff;
     font-family: 'Arial', sans-serif;
     direction: rtl;
@@ -90,7 +100,7 @@ body {
 }
 
 .title {
-    font-family: 'SG Kara', sans-serif;
+    font-family: var(--font-family-primary);
     font-weight: 400;
     font-size: 96px;
     color: #FFFFFF;
@@ -106,7 +116,7 @@ body {
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, #8A2BE2, #9400D3);
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
@@ -140,57 +150,83 @@ body {
     }
 }
 
-/* Profile Card Styles */
+.container {
+    padding: 50px 0;
+}
+
 .profile-card {
-    display: flex;
     background-color: rgba(68, 68, 68, 0.5);
     border-radius: 25px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px 100px;
+    color: white;
+    transition: transform 0.3s ease;
 }
 
 .profile-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: rgba(68, 68, 68, 0.7);
 }
 
-.card-img-top {
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.card-img-top:hover {
-    transform: scale(1.05);
-}
-
-.card-body {
-    text-align: right;
-    color: #fff;
-}
-
-.card-title {
-    font-family: 'SG Kara', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.card-text {
-    font-family: 'Yekan Bakh FaNum', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.profile-info {
     padding: 20px;
 }
 
+.profile-image {
+    width: 143px;
+    height: 143px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    display: block;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-family: var(--font-family-primary);
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.entry {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.role {
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.gallery-images {
+    max-width: 1000px;
+    height: 300px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
 .text-right {
-    font-family: 'Yekan Bakh FaNum', sans-serif;
+    font-family: var(--font-family-secondary);
     font-weight: 300;
     text-align: right;
 }

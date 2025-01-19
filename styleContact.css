@@ -1,0 +1,237 @@
+/* Header Styles */
+.main-header {
+    font-family:  'SG Kara', sans-serif;
+    background: #1E1E1E;
+    padding: 5px 10px;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    height: 6rem;
+    width: auto;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #e0b0ff !important;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background: rgba(43, 5, 55, 0.95);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Animation for nav links */
+  .nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #e0b0ff;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-right {
+    font-family: 'Yekan Bakh FaNum', sans-serif;
+    font-weight: 300;
+    text-align: right;
+  }
+  
+  .mt-5 {
+    margin-top: 3rem;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(90deg, #6f42c1, #a4508b);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #a4508b, #6f42c1);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: white;
+    color: #1a1a1a;
+  }
+  @font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('path-to-yekan-font.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SG Kara';
+    src: url('path-to-sg-kara-font.woff2') format('woff2');
+  }
+
+  
+  body {
+    background-color: #1E1E1E;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    min-height: 100vh;   
+    align-items: center;
+    justify-content: flex-start;
+  }
+  @font-face {
+    font-family: 'Yekan Bakh FaNum';
+    src: url('path-to-your-font/YekanBakhFaNum.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Yekan Bakh FaNum', sans-serif;
+    direction: rtl;
+}
+
+.frame-93 {
+    width: 682px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.frame-89, .frame-90, .frame-91 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.frame-87 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.rectangle-12 {
+    width: 18px;
+    height: 9px;
+    background-color: #30d6a6;
+}
+
+.label {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.frame-88 {
+    width: 100%;
+    background-color: #525252;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.frame-88 input, .frame-88 textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Yekan Bakh FaNum', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.frame-88.large {
+    height: 146px;
+}
+
+.frame-88 textarea {
+    height: 100%;
+    resize: none;
+}
+
+.frame-92 {
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background: linear-gradient(270deg, rgba(92,10,127,1) 100%, rgba(144,44,210,1) 0%);
+    color: #ffffff;
+    border: none;
+    border-radius: 80px;
+    padding: 15px 50px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'SG Kara', sans-serif;
+    transition: ease 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #fff;
+    color: #6f42c1;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
