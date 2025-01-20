@@ -59,6 +59,7 @@
     width: 100%;
     left: 0;
   }
+
   
   @font-face {
     font-family: 'Yekan Bakh FaNum';
@@ -169,5 +170,84 @@ h1 {
     background-color: white;
     color: #1a1a1a;
   }
+  /* Existing styles are retained */
+
+/* Responsive Styles for smaller devices */
+@media (max-width: 768px) {
+  .main-header {
+    padding: 10px;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+
+  .service-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .service-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .service-title {
+    font-size: 1rem;
+  }
+
+  .service-description {
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    padding: 6px 12px;
+  }
+}
+
 
 

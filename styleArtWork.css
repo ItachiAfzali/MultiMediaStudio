@@ -1,8 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Header Styles */
 .main-header {
     font-family:  'SG Kara', sans-serif;
     background: #1E1E1E;
     padding: 5px 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     animation: gradientAnimation 10s ease infinite;
   }
   
@@ -94,20 +102,20 @@
 
 
 .profile-card {
-    display: flex;
+    display: block;
     justify-content: flex-start;
     width: 1270px;
     background-color: rgba(68, 68, 68, 0.5);
     border-radius: 25px;
     padding: 25px;
-    margin: 0;
+    margin-top: -20px;
     color: white;
 }
 
 .content-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 0px;
 }
 
 .main-content {
@@ -122,11 +130,12 @@
 }
 
 .profile-info {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    margin: 15px 0;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center; /* Changed from flex-start to center */
+  gap: 22px;
+  margin: 15px 0;
+  justify-content: flex-start;
+  text-align: right;
 }
 
 .profile-img {
@@ -156,10 +165,11 @@
 }
 
 .share-title {
-    font-family: 'SG Kara', sans-serif;
-    font-size: 24px;
-    margin-bottom: 42px;
-    text-align: right;
+  font-family: 'SG Kara', sans-serif;
+  font-size: 24px;
+  margin-bottom: 42px;
+  text-align: right;
+  direction: rtl;
 }
 
 .social-icons {
@@ -236,12 +246,14 @@
     background: linear-gradient(90deg, #a4508b, #6f42c1);
   }
   
-  .social-icons {
+  .social {
     display: flex;
+    align-items: flex-start;
+    align-items: flex-start;
     gap: 10px;
   }
   
-  .social-icon {
+  .social {
     color: white;
     border: 1px solid white;
     padding: 5px 10px;
@@ -250,7 +262,7 @@
     transition: background 0.3s ease, color 0.3s ease;
   }
   
-  .social-icon:hover {
+  .social:hover {
     background-color: white;
     color: #1a1a1a;
   }

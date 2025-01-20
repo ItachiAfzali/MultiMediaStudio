@@ -102,10 +102,11 @@ body {
 .title {
     font-family: var(--font-family-primary);
     font-weight: 400;
-    font-size: 96px;
+    font-size: 70px;
     color: #FFFFFF;
     text-align: center;
     position: relative;
+    padding-bottom: 10px;
     margin: 0;
 }
 
@@ -150,28 +151,78 @@ body {
     }
 }
 
-.container {
-    padding: 50px 0;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.profile-card {
+
+
+.frame-62 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    direction: rtl;
+    gap: 40px;
+    padding: 30px 25px;
     background-color: rgba(68, 68, 68, 0.5);
     border-radius: 25px;
-    padding: 30px 100px;
-    color: white;
-    transition: transform 0.3s ease;
+    width: 1552px;
+    margin: 10px;
+    animation: fadeIn 0.8s ease-out;
 }
 
-.profile-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.frame-60 {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    gap: 18px;
+    width: 482px;
+    cursor: pointer;
+
 }
 
-.profile-info {
-    padding: 20px;
+.frame-59 {
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+}
+
+.frame-58 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 320px;
+}
+
+.name {
+    font-family: 'SG Kara', sans-serif;
+    text-decoration: none !important;
+
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.entry {
+    font-family: 'Yekan Bakh FaNum', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: right;
 }
 
 .profile-image {
+    display:flex ;
+    justify-content: right;
+    align-items: flex-start;
     width: 143px;
     height: 143px;
     border-radius: 50%;
@@ -179,51 +230,51 @@ body {
 }
 
 .profile-image img {
-    display: block;
-    justify-content: flex-start;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.name {
-    font-family: var(--font-family-primary);
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.entry {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 0;
-    text-align: right;
-}
-
-.role {
+.titlee {
+    font-family: 'Yekan Bakh FaNum', sans-serif;
     font-size: 36px;
     font-weight: 900;
-    margin-top: 20px;
+    color: #ffffff;
     text-align: right;
 }
 
-.gallery-images {
-    max-width: 1000px;
+.frame-61 {
+    margin-top: 10px;
+    gap: 10px;
+    width: 980px;
     height: 300px;
-    padding: 1rem;
-    overflow: hidden;
 }
 
-.gallery-images img {
+.frame-61 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
-.gallery-images img:hover {
-    transform: scale(1.05);
+/* Animation for child elements */
+.frame-59, .title, .frame-61 {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
 }
+
+.frame-59 {
+    animation-delay: 0.2s;
+}
+
+.title {
+    animation-delay: 0.4s;
+}
+
+.frame-61 {
+    animation-delay: 0.6s;
+}
+
+
 
 .text-right {
     font-family: var(--font-family-secondary);

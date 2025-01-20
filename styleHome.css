@@ -59,7 +59,26 @@
   width: 100%;
   left: 0;
 }
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
 
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #fff; /* Default color */
+  display: block;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Change color on hover */
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: #fff; /* New color on hover */
+}
 @font-face {
   font-family: 'Yekan Bakh FaNum';
   src: url('path-to-yekan-font.woff2') format('woff2');
@@ -328,3 +347,163 @@ body {
   background-color: white;
   color: #1a1a1a;
 }
+/* Existing styles are retained */
+
+/* Responsive Styles for smaller devices */
+@media (max-width: 768px) {
+  .main-frame {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px;
+  }
+
+  .text-frame {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .studio-title {
+    font-size: 48px;
+  }
+
+  .creative-title {
+    font-size: 32px;
+  }
+
+  .divider {
+    width: 90%;
+  }
+
+  .bottom-frame {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .cta-button-wrapper {
+    width: 100%;
+  }
+
+  .cta-button {
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .service-section {
+    padding: 40px 0;
+  }
+
+  .service-card {
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+
+  .icon-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+  }
+
+  .step {
+    padding: 15px;
+  }
+
+  .step-number {
+    font-size: 1.5rem;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+  }
+
+  .step-description {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  .studio-title {
+    font-size: 36px;
+  }
+
+  .creative-title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .service-card {
+    font-size: 0.7rem;
+  }
+
+  .service-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .step-number {
+    font-size: 1.2rem;
+  }
+
+  .step-title {
+    font-size: 1rem;
+  }
+
+  .step-description {
+    font-size: 0.8rem;
+  }
+  .text-right{
+    text-align:center ;
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #6f42c1, #a4508b);
+    border: none;
+    border-radius: 20px;
+    padding: auto 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #a4508b, #6f42c1);
+  }
+}
+

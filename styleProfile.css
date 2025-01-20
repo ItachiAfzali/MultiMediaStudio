@@ -112,20 +112,24 @@ body {
 }
 
 .profile-info {
-    display: flex;
-    justify-content: flex-end;
-    gap: 11px;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin: 15px 0;
+  justify-content: flex-end; /* Changed from flex-start to flex-end */
+  text-align: left; /* Changed from right to left */
 }
 
 .profile-details {
+  
     text-align: right;
 }
 
 .name {
     font-family: 'SG Kara', sans-serif;
+    text-decoration: none;
     font-size: 32px;
-    color: #ffffff;
+    color:#ffffff;
     margin-bottom: 10px;
 }
 
@@ -163,9 +167,9 @@ body {
 .description {
     font-family: 'Yekan Bakh FaNum', sans-serif;
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 400;
     color: #ffffff;
-    text-align: center;
+    text-align: right;
 }
 
 .social-section {
@@ -278,6 +282,7 @@ body {
 
 .text-right {
     font-family: 'Yekan Bakh FaNum', sans-serif;
+    color: #ffffff;
     font-weight: 300;
     text-align: right;
   }
@@ -298,12 +303,12 @@ body {
     background: linear-gradient(90deg, #a4508b, #6f42c1);
   }
   
-  .social-icons {
+  .social {
     display: flex;
     gap: 10px;
   }
   
-  .social-icon {
+  .social {
     color: white;
     border: 1px solid white;
     padding: 5px 10px;
@@ -312,7 +317,7 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
   }
   
-  .social-icon:hover {
+  .social:hover {
     background-color: white;
     color: #1a1a1a;
   }
