@@ -60,6 +60,24 @@
     left: 0;
   }
 
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #fff; /* Default color */
+    display: block;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change color on hover */
+  .navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #fff; /* New color on hover */
+  }
+  .navbar-nav{
+    text-align: center;
+  }
+  
   
   @font-face {
     font-family: 'Yekan Bakh FaNum';

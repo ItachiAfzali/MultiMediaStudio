@@ -6,127 +6,141 @@
 
 /* Header Styles */
 .main-header {
-    font-family:  'SG Kara', sans-serif;
-    background: #1E1E1E;
-    padding: 5px 10px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    animation: gradientAnimation 10s ease infinite;
-  }
-  
-  /* Logo Styles */
-  .logo {
-    height: 6rem;
-    width: auto;
-  }
-  
-  /* Navigation Styles */
-  .navbar {
-    padding: 0.5rem 1rem;
-  }
-  
-  .navbar-nav .nav-link {
-    color: white !important;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    margin: 2rem;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #e0b0ff !important;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 991px) {
-    .navbar-collapse {
-      background: rgba(43, 5, 55, 0.95);
-      padding: 1rem;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-  }
-  
-  /* Animation for nav links */
-  .nav-link {
-    position: relative;
-  }
-  
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: #e0b0ff;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-link:hover::after {
-    width: 100%;
-    left: 0;
-  }
-  
-  @font-face {
-    font-family: 'Yekan Bakh FaNum';
-    src: url('path-to-yekan-font.woff2') format('woff2');
-  }
-  
-  @font-face {
-    font-family: 'SG Kara';
-    src: url('path-to-sg-kara-font.woff2') format('woff2');
-  }
+  font-family: 'SG Kara', sans-serif;
+  background: #1E1E1E;
+  padding: 5px 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  animation: gradientAnimation 10s ease infinite;
+}
 
-  
-  body {
-    background-color: #1E1E1E;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    direction: rtl;
-    min-height: 100vh;   
-    align-items: center;
-    justify-content: flex-start;
-  }
+/* Logo Styles */
+.logo {
+  height: 6rem;
+  width: auto;
+}
 
-  @font-face {
-    font-family: 'Yekan Bakh FaNum';
-    src: url('path-to-yekan-font.woff2') format('woff2');
+/* Navigation Styles */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e0b0ff !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #fff; /* Default color */
+  display: block;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Change color on hover */
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: #fff; /* New color on hover */
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(43, 5, 55, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+}
+
+/* Animation for nav links */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #e0b0ff;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 @font-face {
-    font-family: 'SG Kara';
-    src: url('path-to-sg-kara-font.woff2') format('woff2');
+  font-family: 'Yekan Bakh FaNum';
+  src: url('path-to-yekan-font.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'SG Kara';
+  src: url('path-to-sg-kara-font.woff2') format('woff2');
+}
 
+body {
+  background-color: #1E1E1E;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 .profile-card {
-    display: block;
-    justify-content: flex-start;
-    width: 1270px;
-    background-color: rgba(68, 68, 68, 0.5);
-    border-radius: 25px;
-    padding: 25px;
-    margin-top: -20px;
-    color: white;
+  display: block;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1270px;
+  background-color: rgba(68, 68, 68, 0.5);
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: -20px;
+  color: white;
 }
 
 .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0px;
 }
 
 .main-content {
-    flex: 1;
+  flex: 1;
 }
 
 .title {
-    font-family: 'SG Kara', sans-serif;
-    font-size: 48px;
-    margin-bottom: 15px;
-    text-align: right;
+  font-family: 'SG Kara', sans-serif;
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: right;
 }
 
 .profile-info {
@@ -139,29 +153,30 @@
 }
 
 .profile-img {
-    width: 103px;
-    height: 103px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .name {
-    font-family: 'Yekan Bakh FaNum', sans-serif;
-    font-weight: 900;
-    font-size: 32px;
-    margin: 0;
+  font-family: 'Yekan Bakh FaNum', sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  margin: 0;
 }
 
 .description {
-    font-family: 'Yekan Bakh FaNum', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    text-align: right;
-    line-height: 1.5;
+  font-family: 'Yekan Bakh FaNum', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: right;
+  line-height: 1.5;
 }
 
 .share-section {
-    width: 222px;
+  width: 100%;
+  max-width: 222px;
 }
 
 .share-title {
@@ -173,97 +188,157 @@
 }
 
 .social-icons {
-    display: flex;
-
-    gap: 23px;
-    justify-content: flex-end;
+  display: flex;
+  gap: 23px;
+  justify-content: flex-end;
 }
 
 .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .social-icon img {
-    width: 36px;
-    height: 36px;
-    object-fit: contain;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
+
 .comic-strip {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .comic-panel {
-    border: 2px solid #6c757d;
-    margin: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  border: 2px solid #6c757d;
+  margin: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .comic-panel:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .comic-panel img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .text-right {
-    font-family: 'Yekan Bakh FaNum', sans-serif;
-    font-weight: 300;
-    text-align: right;
-  }
-  
-  .mt-5 {
-    margin-top: 3rem;
-  }
-  
-  .btn-primary {
-    background: linear-gradient(90deg, #6f42c1, #a4508b);
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    transition: background 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background: linear-gradient(90deg, #a4508b, #6f42c1);
-  }
-  
-  .social {
-    display: flex;
-    align-items: flex-start;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  
-  .social {
-    color: white;
-    border: 1px solid white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  
-  .social:hover {
-    background-color: white;
-    color: #1a1a1a;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-right {
+  font-family: 'Yekan Bakh FaNum', sans-serif;
+  font-weight: 300;
+  text-align: right;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6f42c1, #a4508b);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #a4508b, #6f42c1);
+}
+
+.social {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.social {
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-card {
+    width: auto;
+    flex-direction: column;
+    padding: 15px;
   }
 
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .profile-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .share-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .share-title {
+    font-size: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .share-title {
+    font-size: 18px;
+  }
+
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
