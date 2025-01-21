@@ -178,11 +178,15 @@ body {
     flex-direction: column;
     gap: 16px;
 }
+.frame-88{
+  text-align: right;
+}
 
 .frame-87 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: right;
     gap: 7px;
 }
 
@@ -207,7 +211,9 @@ body {
 }
 
 .frame-88 input, .frame-88 textarea {
-    width: 100%;
+    width: 100% ;
+    display: flex;
+    justify-content: flex-start;
     background: transparent;
     border: none;
     color: rgba(255, 255, 255, 0.5);
@@ -215,6 +221,7 @@ body {
     font-size: 24px;
     font-weight: 500;
     padding: 10px;
+    text-align: right;
 }
 
 .frame-88.large {
