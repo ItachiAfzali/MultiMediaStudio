@@ -1,5 +1,8 @@
 /* Header Styles */
 .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family:  'SG Kara', sans-serif;
   background: #1E1E1E;
   padding: 5px 10px;
@@ -8,6 +11,7 @@
 
 /* Logo Styles */
 .logo {
+  margin: 10px;
   height: 6rem;
   width: auto;
 }
@@ -120,7 +124,7 @@ body {
 
 .studio-title {
   font-family: 'SG Kara', sans-serif;
-  font-size: 96px;
+  font-size: 75px;
   font-weight: 400;
   margin-bottom: 20px;
   text-shadow: #6f42c1 0px 4px 0px;
